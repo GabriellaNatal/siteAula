@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Escriviatto">
+    <title>Contato</title>
+</head>
+
+<body>
+    <div id="menu"> 
+        <div id="lista">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+                <li><a href="quemSomos.html">Quem Somos</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- inicio do form -->
+    <div class="content">
+        <form action="">
+            <fieldset>
+                <legend>Dados para Contato</legend>
+                <div class="row">
+                    <label for="nome">Nome</label>
+                    <input type="text"id="nome" name="nome" placeholder="Digite o seu nome" required >
+                </div>
+                <div class="row">
+                    <label for="sobrenome">Sobreome</label>
+                    <input type="text"id="sobrenome" name="sobrenome" placeholder="Digite o seu sobrenome" required >
+                </div>
+                <div class="row">
+                    <label for="email">Emails</label>
+                    <input type="email"id="email" name="email" placeholder="Digite o seu email" required >
+                </div>
+             </fieldset>
+            <fieldset>
+                <legend>Dados da Mensagem</legend>
+                <div class="row">
+                    <label for="">Selecione o tipo de mensagem</label>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="duvida" name="duvida">
+                    <label for="php">Duvida</label>
+                    <input type="checkbox" id="sugestao" name="sugestao">
+                    <label for="java">Sugestão</label>
+                    </div>
+                <div class="row">
+                    <label for="sobre">Escreva sua Mensagem</label>
+                </div>
+                <div class="row">
+                    <textarea name="sobre" id="sobre" cols="30" rows="5" placeholder="Digite aqui"></textarea>
+                </div>
+                <div class="row">
+                    <input type="file" accept=".pdf, .docx">
+                </div>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+    <!-- fim do form -->
+</body>
+</html>
